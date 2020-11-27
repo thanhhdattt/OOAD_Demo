@@ -6,11 +6,13 @@ import lombok.*;
 import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Setter
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
+@Table(name = "SubmissionFiles")
 public class SubmissionFiles {
 
     @Id

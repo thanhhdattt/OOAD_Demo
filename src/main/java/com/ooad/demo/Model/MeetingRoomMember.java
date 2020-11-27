@@ -10,24 +10,21 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Setter
 @Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "Courses")
-public class Courses {
+@Table(name = "MeetingRoomMember")
+public class MeetingRoomMember {
 
     @Id
     @GeneratedValue
-    @Column(name = "course_id")
-    private Integer course_id;
+    @Column(name = "meeting_room_member_id")
+    private int meeting_room_member_id;
 
-    @Column(name = "host_id")
-    private Integer host_id;
+    @Column(name = "user_id")
+    private int user_id;
 
-    @Column(name = "name")
-    private String name;
-
-    @Column(name = "description")
-    private String description;
+    @Column(name = "meeting_room_id")
+    private int meeting_room_id;
 }

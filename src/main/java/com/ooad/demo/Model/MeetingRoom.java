@@ -15,18 +15,15 @@ import javax.persistence.Table;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "CourseMembers")
-public class CourseMembers {
+@Table(name = "MeetingRoom")
+public class MeetingRoom {
     @Id
     @GeneratedValue
-    @Column(name = "course_member_id")
-    private Integer course_member_id;
+    @Column(name = "meeting_room_id")
+    private int meeting_room_id;
 
-    @Column(name = "course_id")
-    private Integer course_id;
-
-    @Column(name = "user_id")
-    private Integer user_id;
+    @Column(name = "host_id")
+    private int host_id;
 
     @Column(name = "description")
     private String description;

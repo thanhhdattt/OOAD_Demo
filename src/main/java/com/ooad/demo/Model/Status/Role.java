@@ -1,10 +1,13 @@
 package com.ooad.demo.Model.Status;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 @Getter
-@AllArgsConstructor
 public enum Role {
-    TEACHER, STUDENT
+    TEACHER("Teacher"), STUDENT("Student");
+    public final String label;
+
+    private Role(String label){
+        this.label = label;
+    }
 }

@@ -6,5 +6,5 @@ import lombok.Getter;
 @Getter
 @AllArgsConstructor
 public enum Status {
-    PENDING, ACCEPTED, REJECTED
+    PENDING, ACCEPTED, REJECTED, ONLINE, OFFLINE
 }
